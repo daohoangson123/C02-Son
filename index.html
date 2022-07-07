@@ -12,26 +12,26 @@
     <fieldset>
       <p class="ttcb">Thông tin cơ bản</p>
       <form>
-        <label for="Họ và tên">Họ và tên:</label>
-        <input type="text" id="Họ và tên" name="Fullname" /><br />
-        <br /><label for="Ngày sinh">Ngày sinh:</label>
-        <input type="date" id="Ngày sinh" name="Birthday" /><br />
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" name="Fullname" /><br />
+        <br /><label for="bday">Ngày sinh:</label>
+        <input type="date" id="bday" name="Birthday" /><br />
         <br />Giới tính
-        <input type="radio" id="Nam" name="Gender" value="Male" />
-        <label for="Nam">Nam</label>&nbsp;
-        <input type="radio" id="Nữ" name="Gender" value="Female" />
-        <label for="Nữ">Nữ</label>&nbsp;
-        <input type="radio" id="Khác" name="Gender" value="Other" />
-        <label for="Khác">Khác</label><br />
+        <input type="radio" id="male" name="Gender" value="Male" />
+        <label for="male">Nam</label>&nbsp;
+        <input type="radio" id="female" name="Gender" value="Female" />
+        <label for="female">Nữ</label>&nbsp;
+        <input type="radio" id="other" name="Gender" value="Other" />
+        <label for="other">Khác</label><br />
         <br />Tổ hợp xét tuyển<br /><br />
-        <input type="checkbox" id="Toán" name="Môn" value="Toán" />
-        <label for="Toán">Toán</label><br />
-        <input type="checkbox" id="Lý" name="Môn" value="Lý" />
-        <label for="Lý">Lý</label><br />
-        <input type="checkbox" id="Hóa" name="Môn" value="Hóa" />
-        <label for="Hóa">Hóa</label><br />
-        <input type="checkbox" id="Anh" name="Môn" value="Anh" />
-        <label for="Anh">Anh</label>
+        <input type="checkbox" id="math" name="Subject" value="Math" />
+        <label for="math">Toán</label><br />
+        <input type="checkbox" id="physic" name="Subject" value="Physic" />
+        <label for="physic">Lý</label><br />
+        <input type="checkbox" id="chemis" name="Subject" value="Chemis" />
+        <label for="chemis">Hóa</label><br />
+        <input type="checkbox" id="eng" name="Subject" value="English" />
+        <label for="eng">Anh</label>
       </form>
     </fieldset>
     <fieldset>
@@ -40,7 +40,9 @@
         <label for="Email">Email (*):</label>
         <input required type="email" id="Email" name="Email" /><br /><br />
         <label for="Số điện thoại">Số điện thoại:</label>
-        <input type="text" id="Số điện thoại" name="SĐT" />
+        <input type="tel" id="Số điện thoại" name="SĐT" /><br />
+        ><br />
+        <input type="button" value="Button" />
       </form>
     </fieldset>
   </body>

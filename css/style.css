@@ -1,0 +1,38 @@
+form {
+    background-image: url(../img/doc.jpg);
+    background-image: url(../img/R.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: 400px 700px;
+    background-position: center;
+    padding: 20px;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  fieldset {
+    background-color: rgba(243, 237, 243, 0.4);
+    width: 270px;
+    height: 600px;
+    border-color: black;
+    border-radius: 20px;
+    text-align: left;
+    margin: auto;
+  }
+  
+  @keyframes example {
+    0% {background-image: url(../img/R.jpg);}
+    25% {background-image: url(../img/doc.jpg);}
+    50% {background-image: url(../img/R.jpg);}
+    75% {background-image: url(../img/doc.jpg);}
+    100% {background-image: url(../img/R.jpg);}
+  }
+  /* @keyframes example {
+    from {background-image: url(../img/R.jpg);}
+    to {background-image: url(../img/doc.jpg);}
+  } */
+
+  .button {
+    cursor: pointer;
+  }

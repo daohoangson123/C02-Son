@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* form {
+        background-image: url(./img/form\ -\ Copy.jpg);
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        background-size: 900px 700px;
+        padding-left: 110px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      fieldset {
+        background-color: rgba(252, 252, 252, 0.199);
+        width: 270px;
+        height: 600px;
+        border-radius: 20px;
+        text-align: left;
+      } */
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>C02-Form</title>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend style="text-align: center; font-size: 20px">
+          Form đăng ký:
+        </legend>
+        <br />
+        <label for="fullname">Họ và tên *:</label>
+        <input type="text" id="fullname" name="Fullname" /><br />
+        <br /><label for="bday">Ngày sinh:</label>
+        <input type="date" id="bday" name="Birthday" /><br />
+        <br />Giới tính:
+        <input type="radio" id="male" name="Gender" value="Male" />
+        <label for="male">Nam</label>&nbsp;
+        <input type="radio" id="female" name="Gender" value="Female" />
+        <label for="female">Nữ</label>&nbsp;
+        <input type="radio" id="other" name="Gender" value="Other" />
+        <label for="other">Khác</label><br />
+        <br />Tổ hợp xét tuyển:
+        <input
+          type="button"
+          class="button"
+          onclick="alert('Khối A: Toán - Lý - Hóa...')"
+          value="Tra cứu tổ hơp môn"
+        /><br />
+        <input type="checkbox" id="math" name="Subject" value="Math" />
+        <label for="math">Toán</label><br />
+        <input type="checkbox" id="physic" name="Subject" value="Physic" />
+        <label for="physic">Lý</label><br />
+        <input type="checkbox" id="chemis" name="Subject" value="Chemis" />
+        <label for="chemis">Hóa</label><br />
+        <input type="checkbox" id="eng" name="Subject" value="English" />
+        <label for="eng">Anh</label><br />
+        <input list="THM" />
+        <datalist id="THM">
+          <option value="Toán Lý Hóa"></option>
+          <option value="Toán Lý Anh"></option>
+          <option value="..."></option>
+        </datalist>
+        <br /><br />
+        <label for="Địa chỉ">Địa chỉ:</label><br />
+        <textarea
+          style="resize: none"
+          id="Địa chỉ"
+          name="address"
+          rows="2"
+          cols="35"
+        ></textarea
+        ><br /><br />
+        <label for="ward">Phường/ xã:</label>
+        <select name="ward" id="ward">
+          <option value="">/</option>
+          <option value="HBC">Hiệp Bình Chánh</option>
+          <option value="LĐ">Linh Đông</option>
+          <option value="BC">Bình Chánh</option>
+        </select>
+        <br /><br />
+        <label for="district">Quận/ huyện:</label>
+        <select name="district" id="district">
+          <option value="">/</option>
+          <option value="TĐ">Thủ Đức</option>
+          <option value="BT">Bình Thạnh</option>
+          <option value="1">1</option>
+        </select>
+        <br /><br />
+        <label for="province">Tỉnh/ thành phố:</label>
+        <select name="province" id="province">
+          <option value="">/</option>
+          <option value="HCM">TP Hồ Chí Minh</option>
+          <option value="BD">Bình Dương</option>
+          <option value="ĐN">Đồng Nai</option>
+        </select>
+        <br /><br />
+        <label for="Số điện thoại">SĐT *:</label>
+        <input required type="tel" id="Số điện thoại" name="SĐT" /><br /><br />
+        <label for="Email">Email *:</label>
+        <input required type="email" id="Email" name="Email" /><br /><br />
+        <input
+          type="submit"
+          class="button"
+          value="Đăng ký"
+          style="font-size: 16px"
+        />
+        <input
+          class="button"
+          style="float: right"
+          type="reset"
+          value="Nhập lại"
+        /><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
